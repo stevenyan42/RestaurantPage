@@ -7,7 +7,6 @@ function loadHome() {
     home.innerHTML = 
     `<h1>Welcome to Big Stove's Big Grub</h1>
     <h2>Home of the Hottest, and Freshest Eats in the Lower Mainland</h2>
-    <button class="menu-button">View Menu</button>
     <div class="hours">
         <h3>Hours of Operation</h3>
         <div class="hours-table">
