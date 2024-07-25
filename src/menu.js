@@ -60,20 +60,19 @@ function createMenuItem(item, desc, price, src, alt) {
     menuItemTitle.textContent = item;
     const menuItemDesc = document.createElement("p");
     menuItemDesc.textContent = desc;
+    const menuItemImgCont = document.createElement("div");
+    menuItemImgCont.classList.add("img-cont");
     const menuItemImg = document.createElement("img");
     menuItemImg.src = src;
     menuItemImg.alt = alt;
-
-    console.log(`Image source: ${src}`);
-    console.log(`Image alt text: ${alt}`);
+    menuItemImgCont.appendChild(menuItemImg);
 
     const menuItemPrice = document.createElement("h3");
     menuItemPrice.textContent = price;
 
-
     menuItem.appendChild(menuItemTitle);
     menuItem.appendChild(menuItemDesc);
-    menuItem.appendChild(menuItemImg);
+    menuItem.appendChild(menuItemImgCont);
     menuItem.appendChild(menuItemPrice);
 
     return menuItem;
